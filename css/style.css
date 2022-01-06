@@ -1,0 +1,141 @@
+* {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  color: #0c1115;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+/* Header Section */
+header {
+  background-color: antiquewhite;
+}
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.headerInner {
+  margin: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+.burgerMenu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.burgerMenu span {
+  width: 38px;
+  height: 3px;
+  background: #2f344e;
+  margin-bottom: 6px;
+}
+.burgerMenu:hover span {
+  background-color: #ecaf44;
+}
+header nav a {
+  color: #2f344e;
+  margin-left: 45px;
+}
+header nav a:hover {
+  color: #ecaf44;
+}
+#mobileMenu {
+  display: none;
+}
+#mobileMenu a {
+  margin: 30px 0;
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+#mobileMenu a:hover {
+  color: #ecaf44;
+}
+#mobileMenu.open {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0c1115;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer Section */
+footer {
+  clear: both;
+  background-color: antiquewhite;
+}
+.footerInner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5%;
+  padding: 25px 0;
+}
+footer .col-left {
+  float: left;
+  width: 70%;
+}
+footer .col-right {
+  float: right;
+  width: 30%;
+  text-align: right;
+}
+.fa-linkedin,
+.fa-github,
+.fa-instagram {
+  color: rgb(82, 79, 79);
+  font-size: 25px;
+  transition: all 0.5s ease;
+}
+.fa-github,
+.fa-instagram {
+  padding-left: 20px;
+}
+.fa-linkedin:hover,
+.fa-github:hover,
+.fa-instagram:hover {
+  color: white;
+  transition: all 0.5s ease;
+}
+footer .right {
+  align-items: flex-end;
+  display: flex;
+}
+
+/* Responsive media query */
+@media screen and (max-width: 640px) {
+  /* header section */
+  header {
+    position: relative;
+    z-index: 4;
+  }
+  header nav {
+    display: none;
+  }
+  .burgerMenu {
+    display: flex;
+  }
+  /* footer section */
+  .footerInner {
+    display: inline-block;
+  }
+  footer .col-left,
+  footer .col-right {
+    width: 100%;
+  }
+  footer .col-right {
+    padding-top: 0.5rem;
+    text-align: right;
+  }
+}
