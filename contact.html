@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="css/normalise.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Assistant&family=Lato:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
     <title>Tan Ah Kow - Contact Me</title>
   </head>
@@ -37,61 +40,82 @@
 
     <nav id="mobileMenu">
       <a href="index.html">About Me</a>
-      <a href="education.html">Education & Achievement</a>
+      <a href="education.html"
+        >Education &<br />
+        Achievement</a
+      >
       <a href="projects.html">Projects</a>
       <a href="contact.html">Contact</a>
     </nav>
 
-    <!-- Main Section - About Me -->
+    <!-- Main Section - Contact Me -->
     <main>
       <h1>Contact Me</h1>
-      <p>
-        Hey, this is my homepage, so I have to say something about myself.
-        Sometimes it is hard to introduce yourself because you know yourself so
-        well that you do not know where to start with.
-      </p>
-      <section class="row">
+
+      <section>
         <div class="col-left">
           <p>
-            I am a person who is positive about every aspect of life. There are
-            many things I like to do, to see, and to experience. I like to read,
-            I like to write; I like to think, I like to dream; I like to talk, I
-            like to listen. I like to see the sunrise in the morning, I like to
-            see the moonlight at night; I like to feel the music flowing on my
-            face, I like to smell the wind coming from the ocean. I like to look
-            at the clouds in the sky with a blank mind, I like to do thought
-            experiment when I cannot sleep in the middle of the night. I like
-            flowers in spring, rain in summer, leaves in autumn, and snow in
-            winter. I like to sleep early, I like to get up late; I like to be
-            alone, I like to be surrounded by people. I like country’s peace, I
-            like metropolis’ noise; I like the beautiful west lake in Hangzhou,
-            I like the flat cornfield in Champaign. I like delicious food and
-            comfortable shoes; I like good books and romantic movies. I like the
-            land and the nature, I like people. And, I like to laugh.
+            If you have any questions, please feel free to drop me a message.
+            I'll get back to you as soon as I can.
           </p>
-          <p>
-            I always wanted to be a great writer, like Victor Hugo who wrote
-            "Les Miserable", or like Roman Roland who wrote "John Christopher".
-            They have influenced millions of people through their books. I also
-            wanted to be a great psychologist, like William James or Sigmund
-            Freud, who could read people’s mind. Of course, I am nowhere close
-            to these people, yet. I am just someone who does some teaching, some
-            research, and some writing. But my dream is still alive.
-          </p>
-          <p class="note">
-            Note: text adopted from
-            <a href="https://faculty.washington.edu/xpchen/me.html" class="note"
-              >https://faculty.washington.edu/xpchen/me.html</a
-            >
-          </p>
+          <div class="icon">
+            <div class="row">
+              <i class="fas fa-id-badge"></i>
+              <div class="info">
+                <div class="head">Name</div>
+                <div class="sub">Tan Ah Kow</div>
+              </div>
+            </div>
+
+            <div class="row">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="info">
+                <div class="head">Location</div>
+                <div class="sub">Singapore</div>
+              </div>
+            </div>
+
+            <div class="row">
+              <i class="fas fa-phone-volume"></i>
+              <div class="info">
+                <div class="head">Dial Number</div>
+                <div class="sub">+65 9999 9999</div>
+              </div>
+            </div>
+
+            <div class="row">
+              <i class="fas fa-file-alt"></i>
+              <div class="info">
+                <div class="head">Email Address</div>
+                <div class="sub">AKTan@gmail.com</div>
+              </div>
+            </div>
+          </div>
         </div>
+
         <div class="col-right">
-          <img
-            src="images/me.jpg"
-            alt="my photo"
-            class="responsive-image"
-            id="portfolio-image"
-          />
+          <form id="signup">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name?" />
+            <small class="error"></small>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Your Email Address?" />
+            <small class="error"></small>
+
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              placeholder="Leave A Message Here..."
+              rows="5"
+            ></textarea>
+            <small class="error"></small>
+
+            <div class="submit-btn">
+              <input type="submit" value="Send" />
+              <p id="success"></p>
+            </div>
+          </form>
         </div>
       </section>
     </main>
@@ -116,5 +140,6 @@
     ></script>
 
     <script src="js/script.js"></script>
+    <script src="js/form-scripts.js"></script>
   </body>
 </html>
