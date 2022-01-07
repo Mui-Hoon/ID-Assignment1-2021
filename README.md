@@ -71,3 +71,7 @@ If this section grows too long, you may want to split it off into a separate fil
 ### Acknowledgements
 
 - I received inspiration for this project from X
+
+### GitHub Pages
+
+The site is published at https://mui-hoon.github.io/ID-Assignment1-2021/
