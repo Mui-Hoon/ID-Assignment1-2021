@@ -4,36 +4,129 @@ main {
 }
 main .col-left {
   float: left;
-  width: 70%;
+  width: 50%;
 }
 main .col-right {
   float: right;
-  width: 30%;
+  width: 50%;
+}
+section {
+  display: flex;
 }
 .row {
   display: flex;
+  height: 65px;
+  align-items: center;
+  margin-left: 25px;
+  font-size: 27px;
+  color: rgb(155, 6, 6);
 }
-.note {
-  font-size: 0.75rem;
-  font-style: italic;
-}
-
-/* images */
-.responsive-image {
-  max-width: 100%;
-  height: auto;
-}
-#portfolio-image {
-  padding-top: 20px;
+.info {
+  margin-left: 25px;
+  color: rgb(146, 7, 7);
 }
 
+/* form section */
+form {
+  max-width: 700px;
+  width: 100%;
+  background: antiquewhite;
+  margin: 20px;
+  padding: 60px;
+  border: 2px solid rgb(196, 184, 184);
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+}
+
+form:hover {
+  background: rgb(177, 174, 174);
+  transition: all 0.5s ease;
+}
+
+label {
+  font-size: 17px;
+  font-weight: 610;
+  display: block;
+  margin: 16px 2px;
+}
+
+::placeholder {
+  color: rgb(8, 8, 8);
+  opacity: 35%;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+  resize: none;
+  border: none;
+  border-bottom: 2px solid rgb(196, 184, 184);
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-bottom: 2px solid rgb(236, 213, 111);
+  transition: all 0.5s ease;
+}
+
+textarea::-webkit-scrollbar {
+  width: 5px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: rgb(148, 16, 16);
+}
+
+.submit-btn {
+  text-align: center;
+}
+
+input[type="submit"] {
+  font-weight: 500;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 740px;
+  background: rgb(196, 184, 184);
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 7px;
+  border: 3px solid rgb(236, 213, 111);
+  transition: all 0.5s ease;
+}
+
+input[type="submit"]:hover {
+  color: white;
+  background: rgb(22, 22, 22);
+  transition: all 0.5s ease;
+}
+.error {
+  padding-left: 4px;
+  font-size: 14px;
+  font-weight: 520;
+  color: rgb(194, 9, 9);
+}
+
+#success {
+  padding-top: 13px;
+  font-weight: 550;
+  font-size: 20px;
+  color: rgb(18, 158, 18);
+}
 /* Responsive media query */
 @media screen and (max-width: 640px) {
-  .row {
+  section {
     display: block;
   }
   main .col-left,
   main .col-right {
     width: 100%;
+  }
+  form {
+    margin: 20px auto;
+    padding: 20px;
   }
 }
