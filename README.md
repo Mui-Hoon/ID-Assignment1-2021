@@ -4,6 +4,8 @@
 
 One or two paragraphs providing an overview of your project. Tell us about your project.
 
+_below info is adopted from Malcolm's readme file. update needed_
+
 Essentially, this part is your sales pitch.
 
 ## Design Process
