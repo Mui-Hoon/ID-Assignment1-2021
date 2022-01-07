@@ -2,9 +2,9 @@
 
 **This is my personal portfolio website......**
 
-One or two paragraphs providing an overview of your project. Tell us about your project.
-
 _below info is adopted from Malcolm's readme file. update needed_
+
+One or two paragraphs providing an overview of your project. Tell us about your project.
 
 Essentially, this part is your sales pitch.
 
